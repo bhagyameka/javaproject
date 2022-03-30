@@ -20,7 +20,7 @@ stage('Code checkout from bitbucket'){
 stage ('Build using Maven') {
     steps {
         echo '*******mvn build start*******'
-        sh 'mvn clean package'
+        sh 'mvn clean install'
         //-Dmaven.wagon.http.ssl.insecure=true -Drepo.id=cms-stride -Drepo.login=gBL9g2hjHb'
         echo '*******mvn build done*******'
     }
