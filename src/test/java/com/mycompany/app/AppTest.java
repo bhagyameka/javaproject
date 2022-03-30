@@ -19,7 +19,7 @@ public class AppTest
     public void setUpStreams() {
         System.setOut(new PrintStream(outContent));
     }
-/*
+
     @Test
     public void testAppConstructor() {
         try {
@@ -28,7 +28,7 @@ public class AppTest
             fail("Construction failed.");
         }
     }
-*/
+
     @Test
     public void testAppMain()
     {
