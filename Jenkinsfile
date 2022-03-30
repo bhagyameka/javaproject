@@ -103,10 +103,10 @@ stage ('Upload to Jfrog') {
       }
   }
   
-        stage('send mail') {
-        steps {
-            step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: 'bhagyakakumanu@gmail.com.com', sendToIndividuals: true])
-        }
-        }
+       // stage('send mail') {
+       // steps {
+        //    step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: 'bhagyakakumanu@gmail.com.com', sendToIndividuals: true])
+       // }
+       // }
  }
 }
