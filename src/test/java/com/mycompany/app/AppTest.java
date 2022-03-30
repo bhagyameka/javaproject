@@ -19,7 +19,7 @@ public class AppTest
     public void setUpStreams() {
         System.setOut(new PrintStream(outContent));
     }
-/*
+
     @Test
     public void testAppConstructor() {
         try {
@@ -39,7 +39,7 @@ public class AppTest
             fail("\"message\" is not \"Hello World!\"");
         }
     }
-*/
+
     @After
     public void cleanUpStreams() {
         System.setOut(null);
