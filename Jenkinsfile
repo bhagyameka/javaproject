@@ -20,7 +20,7 @@ stage('Code checkout from bitbucket'){
 stage ('Build using Maven') {
     steps {
         echo '*******mvn build start*******'
-        sh 'mvn clean install'
+        //sh 'mvn clean install'
         //-Dmaven.wagon.http.ssl.insecure=true -Drepo.id=cms-stride -Drepo.login=gBL9g2hjHb'
         echo '*******mvn build done*******'
     }
@@ -29,7 +29,7 @@ stage ('Build using Maven') {
 stage('unit testing') {
     steps {
         echo '*******unit testing starts*******'
-        junit skipPublishingChecks: true, testResults: '**/target/surefire-reports/TEST-*.xml'   
+        //junit skipPublishingChecks: true, testResults: '**/target/surefire-reports/TEST-*.xml'   
         echo '*******unit testing ends*******'
                
     }
